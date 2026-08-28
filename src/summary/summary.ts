@@ -115,7 +115,7 @@ export class Summary {
 
     this.totalFiles++
       const fileSize = await context.file.size
-      if (Number.isFinite(fileSize)){
+      if (Number.isFinite(fileSize)) {
         this.size += fileSize
       }
 
