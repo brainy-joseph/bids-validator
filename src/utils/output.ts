@@ -206,7 +206,7 @@ function formatSummary(summary: SummaryOutput): string {
 
   // data
   const column1 = [
-      summary.totalFiles + ' ' + 'Files' + ', ' + prettyBytes(summary.size),
+      summary.totalFiles + ' ' + 'Files' + ', ' + prettyBytes(Number.isFinite(summary.size)?summary.size:0)
       summary.subjects.length +
       ' - ' +
       'Subjects ' +
